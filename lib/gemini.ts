@@ -2,7 +2,7 @@
 
 import type { Question, Subject } from "../types"
 
-const GEMINI_API_KEY = "AIzaSyBieDPh0MlWXTL6IFCcIwbatfXP_iPa2l4"
+const GEMINI_API_KEY = "gemini api key"
 
 export async function generateQuestion(subject: Subject, isNonCalculator = false): Promise<Question> {
   const calculatorPrompt = subject === "Mathematical Reasoning" && isNonCalculator ? "non-calculator section " : ""
